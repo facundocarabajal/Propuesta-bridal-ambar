@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Experiencia Sorpresa · Ámbar Joyas & Relojes</title>
+<title>Propuesta bridal · Ámbar Joyas & Relojes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
@@ -240,22 +240,35 @@
     min-height: 38px;
   }
 
-  .card-price {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 37px;
-    font-weight: 400;
-    color: var(--ink);
-    margin-bottom: 1.5rem;
+  .card-price-list {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--ink-muted);
+    margin-bottom: 0.2rem;
     line-height: 1;
   }
 
-  .card-price span {
+  .card-price-cash {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .price-cash-tag {
     font-family: 'Jost', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--ink-muted);
-    margin-left: 4px;
-    vertical-align: middle;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .divider-thin {
@@ -330,8 +343,7 @@
   }
 
   .card.premium .card-label,
-  .card.premium .card-desc,
-  .card.premium .card-price span {
+  .card.premium .card-desc {
     color: var(--ink-muted);
   }
 
@@ -339,8 +351,8 @@
     color: var(--gold);
   }
 
-  .card.premium .card-price {
-    color: var(--ink);
+  .card.premium .card-price-cash {
+    color: var(--gold);
   }
 
   .card.premium .item-list li {
@@ -1039,16 +1051,16 @@
     <div class="card" onclick="switchTab('basica'); document.getElementById('visual-refs').scrollIntoView({behavior:'smooth'})">
       <p class="card-label">Experiencia</p>
       <h2 class="card-name">Básica</h2>
-      <p class="card-desc">Elegante y sutil, para sumar un detalle especial a la celebración.</p>
-      <div class="card-price">$400.000 <span>· 10 gifts</span></div>
+      <p class="card-desc">Elegante y sutil, para sumar un detalle especial y único a tu celebración.</p>
+      <div class="card-price-list">$500.000 precio de lista</div>
+      <div class="card-price-cash">$375.000 <span class="price-cash-tag">efectivo · (25% OFF)</span></div>
       <div class="card-payment">
-        <div class="payment-row"><i class="ti ti-credit-card"></i><span>6 cuotas sin interés de <strong>$66.667</strong></span></div>
-        <div class="payment-row"><i class="ti ti-cash"></i><span>Efectivo <strong>$300.000</strong> <em>(25% OFF)</em></span></div>
+        <div class="payment-row"><i class="ti ti-credit-card"></i><span>6 cuotas sin interés de <strong>$83.334</strong></span></div>
       </div>
       <div class="divider-thin"></div>
       <ul class="item-list">
-        <li><i class="ti ti-diamond"></i>Selección de joyas en plata 925 y acero blanco y dorado</li>
-        <li><i class="ti ti-gift"></i>Aros, pulseras, collares o mix</li>
+        <li><i class="ti ti-diamond"></i>Joyas en plata 925 y acero blanco y dorado</li>
+        <li><i class="ti ti-gift"></i>Incluye 10 gifts: Aros, pulseras, collares o mix</li>
         <li><i class="ti ti-box"></i>Packaging estándar</li>
         <li><i class="ti ti-refresh"></i>Todos los gifts cuentan con cupón de cambio</li>
       </ul>
@@ -1058,16 +1070,16 @@
     <div class="card signature" onclick="switchTab('signature'); document.getElementById('visual-refs').scrollIntoView({behavior:'smooth'})">
       <p class="card-label">Experiencia</p>
       <h2 class="card-name">Signature</h2>
-      <p class="card-desc">Una presentación más exclusiva y mejor selección de piezas.</p>
-      <div class="card-price">$600.000 <span>· 10 gifts</span></div>
+      <p class="card-desc">Una presentación más exclusiva junto a una mejor selección de piezas.</p>
+      <div class="card-price-list">$700.000 precio de lista</div>
+      <div class="card-price-cash">$525.000 <span class="price-cash-tag">efectivo · (25% OFF)</span></div>
       <div class="card-payment">
-        <div class="payment-row"><i class="ti ti-credit-card"></i><span>6 cuotas sin interés de <strong>$100.000</strong></span></div>
-        <div class="payment-row"><i class="ti ti-cash"></i><span>Efectivo <strong>$450.000</strong> <em>(25% OFF)</em></span></div>
+        <div class="payment-row"><i class="ti ti-credit-card"></i><span>6 cuotas sin interés de <strong>$116.667</strong></span></div>
       </div>
       <div class="divider-thin"></div>
       <ul class="item-list">
         <li><i class="ti ti-diamond"></i>Selección completa de joyas en plata 925</li>
-        <li><i class="ti ti-gift"></i>Aros, pulseras, collares o mix</li>
+        <li><i class="ti ti-gift"></i>Incluye 10 gifts: Aros, pulseras, collares o mix</li>
         <li><i class="ti ti-box"></i>Packaging especial</li>
         <li><i class="ti ti-refresh"></i>Todos los gifts cuentan con cupón de cambio</li>
       </ul>
@@ -1077,16 +1089,16 @@
     <div class="card premium" onclick="switchTab('premium'); document.getElementById('visual-refs').scrollIntoView({behavior:'smooth'})">
       <p class="card-label">Experiencia</p>
       <h2 class="card-name">Premium</h2>
-      <p class="card-desc">Nuestra propuesta más completa. ¡Llevá tu experiencia a otro nivel!</p>
-      <div class="card-price">$800.000 <span>· 10 gifts</span></div>
+      <p class="card-desc">Nuestra propuesta más completa. ¡Llevá tu experiencia bridal a otro nivel!</p>
+      <div class="card-price-list">$800.000 precio de lista</div>
+      <div class="card-price-cash">$600.000 <span class="price-cash-tag">efectivo · (25% OFF)</span></div>
       <div class="card-payment">
         <div class="payment-row"><i class="ti ti-credit-card"></i><span>6 cuotas sin interés de <strong>$133.334</strong></span></div>
-        <div class="payment-row"><i class="ti ti-cash"></i><span>Efectivo <strong>$600.000</strong> <em>(25% OFF)</em></span></div>
       </div>
       <div class="divider-thin"></div>
       <ul class="item-list">
-        <li><i class="ti ti-diamond"></i>Piezas importadas de joyas seleccionadas en plata 925</li>
-        <li><i class="ti ti-gift"></i>Aros, pulseras, collares o mix</li>
+        <li><i class="ti ti-diamond"></i>Joyas importadas seleccionadas en plata 925</li>
+        <li><i class="ti ti-gift"></i>Incluye 10 gifts: Aros, pulseras, collares o mix</li>
         <li><i class="ti ti-box"></i>Packaging premium</li>
         <li><i class="ti ti-refresh"></i>Todos los gifts cuentan con cupón de cambio</li>
         <li><i class="ti ti-file-text"></i>Tarjetas personalizadas</li>
@@ -1165,7 +1177,7 @@
       <i class="ti ti-credit-card"></i>
       <div>
         <h4>Métodos de pago</h4>
-        <p>25% OFF abonando en efectivo · 6 cuotas sin interés con tarjetas bancarias.</p>
+        <p>25% OFF abonando en efectivo o 6 cuotas sin interés con tarjetas bancarias.</p>
       </div>
     </div>
   </div>
